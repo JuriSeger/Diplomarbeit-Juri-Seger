@@ -180,12 +180,13 @@ figcaption {
   height: 100vh;
   min-height: 105vh;
   background-color: rgba(0, 0, 0, 0);
+  justify-content: space-between;
   align-items: center;
   margin-left: 0;
   padding-bottom: 6%;
   display: flex;
   position: relative;
-  overflow: visible;
+  overflow: scroll;
 }
 
 .section.feature {
@@ -234,8 +235,9 @@ figcaption {
 
 .container {
   flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
-  padding: 10% 20% 10% 10%;
+  padding: 5% 5% 5% 7%;
   display: flex;
 }
 
@@ -960,13 +962,18 @@ figcaption {
 }
 
 .spline-scene {
-  z-index: 0;
+  z-index: -1;
   width: 100%;
   height: 110%;
   object-fit: fill;
+  flex: 0 auto;
+  align-self: flex-start;
   display: block;
-  position: absolute;
+  position: relative;
+  top: 0%;
+  bottom: 0%;
   left: 0;
+  right: 0%;
   overflow: scroll;
 }
 
@@ -1134,7 +1141,7 @@ figcaption {
   justify-content: center;
   margin-left: 0%;
   margin-right: 0%;
-  padding: 9.6rem 10% 0;
+  padding: 9.6rem 10%;
   display: flex;
   overflow: scroll;
 }
@@ -1161,7 +1168,7 @@ figcaption {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 2% 0%;
+  padding: 2% 2% 2% 0%;
   display: flex;
 }
 
@@ -1317,7 +1324,7 @@ figcaption {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  background-image: url('../images/Diplom.png'), linear-gradient(#fff, #fff);
+  background-image: url('../images/Diplom-Kopie.jpg'), linear-gradient(#fff, #fff);
   background-position: 120%, 0 0;
   background-repeat: repeat, repeat;
   background-size: 70%, auto;
@@ -1329,7 +1336,7 @@ figcaption {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  background-image: url('../images/Bildschirmfoto-2023-12-12-um-18.20.26.png');
+  background-image: url('../images/Bildschirmfoto-2023-12-12-um-18.20-Kopie.jpg');
   background-position: 100%;
   background-repeat: repeat;
   background-size: 750px;
@@ -1337,7 +1344,19 @@ figcaption {
   position: absolute;
 }
 
-.div-block-2-copy, .bild-2 {
+.div-block-2-copy {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-image: url('../images/Bildschirmfoto-2023-12-15-um-08.29.28.png');
+  background-position: 100%;
+  background-repeat: repeat;
+  background-size: 750px;
+  background-attachment: fixed;
+  position: absolute;
+}
+
+.bild-2 {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1353,7 +1372,7 @@ figcaption {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  background-image: url('../images/Bildschirmfoto-2023-12-12-um-18.20.26.png');
+  background-image: url('../images/Bildschirmfoto-2023-12-12-um-18.20-Kopie.jpg');
   background-position: 100%;
   background-repeat: repeat;
   background-size: 750px;
@@ -1378,11 +1397,11 @@ figcaption {
   height: 100%;
   overflow-wrap: normal;
   object-fit: cover;
-  background-image: url('../images/Diplom.jpg'), linear-gradient(#fff, #fff);
-  background-position: 120%, 0 0;
-  background-repeat: repeat, repeat;
-  background-size: 60%, auto;
-  background-attachment: fixed, scroll;
+  background-image: url('../images/Diplom.jpg');
+  background-position: 120%;
+  background-repeat: repeat;
+  background-size: 60%;
+  background-attachment: fixed;
   position: absolute;
 }
 
@@ -1390,7 +1409,7 @@ figcaption {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  background-image: url('../images/istockphoto-1472539099-170667a.jpg');
+  background-image: url('../images/Bildschirmfoto-2023-12-15-um-08.29.28.png');
   background-position: 100%;
   background-repeat: repeat;
   background-size: 750px;
@@ -1402,7 +1421,7 @@ figcaption {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  background-image: url('../images/Bildschirmfoto-2023-12-15-um-08.29.28.png');
+  background-image: url('../images/Diplom.jpg');
   background-position: 100%;
   background-repeat: repeat;
   background-size: 750px;
@@ -1438,7 +1457,7 @@ figcaption {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  background-image: url('../images/ux-indonesia-pqzRfBhd9r0-unsplash.jpg');
+  background-image: url('../images/Diplom.jpg');
   background-position: 50%;
   background-repeat: repeat;
   background-size: cover;
@@ -1521,7 +1540,7 @@ figcaption {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  background-image: url('../images/ux-indonesia-pqzRfBhd9r0-unsplash.jpg');
+  background-image: url('../images/Bildschirmfoto-2023-12-15-um-08.29.28.png');
   background-position: 50%;
   background-repeat: repeat;
   background-size: cover;
@@ -1543,6 +1562,101 @@ figcaption {
 
 .video-1 {
   width: 80%;
+}
+
+.flow-first {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--black);
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.flow-first.hero {
+  height: 100vh;
+  min-height: 105vh;
+  background-color: rgba(0, 0, 0, 0);
+  align-items: center;
+  margin-left: 0;
+  padding-bottom: 6%;
+  display: flex;
+  position: relative;
+  overflow: visible;
+}
+
+.flow-first.feature {
+  justify-content: space-between;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+}
+
+.flow-first.feature.reverese {
+  flex-direction: row-reverse;
+}
+
+.flow-first.feature.title {
+  z-index: 0;
+  width: 100%;
+  min-height: 50vh;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  position: relative;
+}
+
+.flow-first.testimonial {
+  display: none;
+  position: relative;
+}
+
+.flow-first.download {
+  min-height: auto;
+  background-image: url('../images/Gradient.webp');
+  background-position: 0 0;
+  background-size: cover;
+  padding-bottom: 0;
+}
+
+.flow-first.prototype {
+  min-height: auto;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding: 15rem 10% 9.6rem;
+  display: flex;
+  overflow: scroll;
+}
+
+.flow-first.prototype.reverese {
+  flex-direction: row-reverse;
+}
+
+.flow-first.prototype.title {
+  z-index: 0;
+  width: 100%;
+  min-height: 50vh;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  position: relative;
+}
+
+.spline-scene-4 {
+  z-index: -1;
+  width: 100%;
+  height: 110%;
+  position: absolute;
+  left: 0;
+  overflow: scroll;
+}
+
+.spline-scene-5 {
+  position: absolute;
+  overflow: scroll;
 }
 
 @media screen and (max-width: 991px) {
@@ -1785,6 +1899,10 @@ figcaption {
   .prozess-button, .back-to-top, .prototyp-button {
     justify-content: center;
   }
+
+  .flow-first.feature, .flow-first.prototype {
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1921,6 +2039,13 @@ figcaption {
   .overview-image-container-prototype {
     height: 35rem;
   }
+
+  .flow-first {
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -1942,7 +2067,7 @@ figcaption {
   .section.hero {
     height: 100svh;
     flex-direction: column;
-    padding-top: 0;
+    padding-top: 25rem;
   }
 
   .section.feature.title {
@@ -1986,6 +2111,10 @@ figcaption {
     padding-left: 0%;
     padding-right: 0%;
     position: fixed;
+    top: 0%;
+    bottom: auto;
+    left: 0%;
+    right: auto;
   }
 
   .nav-link {
@@ -2066,9 +2195,7 @@ figcaption {
   }
 
   .text-center {
-    margin-bottom: 40px;
-    margin-left: 16px;
-    margin-right: 16px;
+    margin: 0 0 40px;
   }
 
   .feature-grid {
@@ -2152,10 +2279,11 @@ figcaption {
 
   .overview-text-container-copy {
     min-height: auto;
+    justify-content: flex-start;
     margin-left: 0%;
     margin-right: 0%;
     padding-left: 7%;
-    padding-right: 7%;
+    padding-right: 2%;
   }
 
   .spline-scene {
@@ -2222,7 +2350,9 @@ figcaption {
   }
 
   .flow.prototype {
-    min-height: 100vh;
+    min-height: auto;
+    margin-top: 50%;
+    margin-bottom: 50%;
     padding: 4%;
   }
 
@@ -2308,16 +2438,70 @@ figcaption {
     flex: 0 auto;
     align-self: center;
   }
-}
 
-#w-node-e7465d7c-1844-8356-4e30-0af003d386c5-9852ad0e, #w-node-e062211a-f29a-411f-9797-7010a91a573b-9852ad0e, #w-node-_9df8783e-7d74-beb0-55d7-15c1cc3240ba-9852ad0e, #w-node-ee892bdc-16ae-be3d-06ae-9245dcaf8ffe-9852ad0e, #w-node-ee892bdc-16ae-be3d-06ae-9245dcaf9002-9852ad0e, #w-node-ee892bdc-16ae-be3d-06ae-9245dcaf9006-9852ad0e, #w-node-c8df73ae-82c6-7363-6bf9-09a9121c62ba-9852ad0e, #w-node-c8df73ae-82c6-7363-6bf9-09a9121c62be-9852ad0e, #w-node-c8df73ae-82c6-7363-6bf9-09a9121c62c2-9852ad0e, #w-node-_594fe735-82d7-0aff-d072-ab09632fbac1-9852ad0e, #w-node-_594fe735-82d7-0aff-d072-ab09632fbac5-9852ad0e, #w-node-_594fe735-82d7-0aff-d072-ab09632fbac9-9852ad0e, #w-node-_1fb494e8-b576-bb29-f714-ce58255f75ab-9852ad17, #w-node-_7d35d1b8-98aa-ad70-af9f-52d9236a3688-9852ad17, #w-node-da7007b8-79d0-b1f4-949d-ac3f8901a8ad-9852ad17, #w-node-_584ebdbc-ced6-5f1d-a966-9007b49209d8-9852ad17 {
-  grid-area: span 1 / span 1 / span 1 / span 1;
-}
-
-@media screen and (max-width: 991px) {
-  #w-node-_584ebdbc-ced6-5f1d-a966-9007b49209d8-9852ad17 {
-    order: -9999;
+  .flow-first {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
+
+  .flow-first.hero {
+    height: 100svh;
+    flex-direction: column;
+    padding-top: 0;
+  }
+
+  .flow-first.feature.title {
+    min-height: 20vh;
+  }
+
+  .flow-first.testimonial {
+    padding-bottom: 40px;
+  }
+
+  .flow-first.download {
+    padding-top: 4rem;
+  }
+
+  .flow-first.prototype {
+    min-height: auto;
+    padding: 30% 4% 4%;
+  }
+
+  .flow-first.prototype.title {
+    min-height: 20vh;
+  }
+
+  .youtube {
+    height: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: contain;
+    overflow: visible;
+  }
+
+  .youtube-2, .youtube-3, .youtube-4, .youtube-5, .youtube-6 {
+    aspect-ratio: 2 / 3;
+  }
+
+  .spline-scene-5 {
+    z-index: -1;
+    aspect-ratio: 2 / 3;
+    order: -1;
+    display: none;
+    position: relative;
+    top: auto;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+  }
+
+  .image-2 {
+    width: 100%;
+    height: auto;
+  }
+}
+
+#w-node-e7465d7c-1844-8356-4e30-0af003d386c5-9852ad0e, #w-node-e062211a-f29a-411f-9797-7010a91a573b-9852ad0e, #w-node-_9df8783e-7d74-beb0-55d7-15c1cc3240ba-9852ad0e, #w-node-ee892bdc-16ae-be3d-06ae-9245dcaf8ffe-9852ad0e, #w-node-ee892bdc-16ae-be3d-06ae-9245dcaf9002-9852ad0e, #w-node-ee892bdc-16ae-be3d-06ae-9245dcaf9006-9852ad0e, #w-node-c8df73ae-82c6-7363-6bf9-09a9121c62ba-9852ad0e, #w-node-c8df73ae-82c6-7363-6bf9-09a9121c62be-9852ad0e, #w-node-c8df73ae-82c6-7363-6bf9-09a9121c62c2-9852ad0e, #w-node-_594fe735-82d7-0aff-d072-ab09632fbac1-9852ad0e, #w-node-_594fe735-82d7-0aff-d072-ab09632fbac5-9852ad0e, #w-node-_594fe735-82d7-0aff-d072-ab09632fbac9-9852ad0e, #w-node-_7d35d1b8-98aa-ad70-af9f-52d9236a3688-9852ad17, #w-node-da7007b8-79d0-b1f4-949d-ac3f8901a8ad-9852ad17 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
 @media screen and (max-width: 479px) {
