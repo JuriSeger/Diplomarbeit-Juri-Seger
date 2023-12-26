@@ -199,18 +199,21 @@ figcaption {
 }
 
 .section.hero {
-  height: 100%;
+  height: auto;
   max-height: none;
-  min-height: 55vw;
+  min-height: 60vw;
+  grid-column-gap: 2%;
+  grid-row-gap: 2%;
+  aspect-ratio: auto;
   background-color: #fff;
-  background-image: linear-gradient(106deg, rgba(35, 35, 229, .98), rgba(203, 203, 255, .66) 100%, #fff), url('../images/Frame-596.jpg');
-  background-position: 0 0, 0 0;
-  background-size: auto, auto;
+  background-image: linear-gradient(30deg, rgba(35, 35, 229, .98), rgba(203, 203, 255, .66) 90%, #fff), url('../images/Frame-596.svg');
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
   justify-content: space-between;
   align-items: center;
-  margin-left: 0;
-  padding-top: 0;
-  padding-bottom: 0%;
+  margin-left: 0%;
+  padding: 0 10% 0% 5%;
+  font-family: Tt Hoves Pro Trial, sans-serif;
   display: flex;
   position: static;
   overflow: scroll;
@@ -284,14 +287,15 @@ figcaption {
 }
 
 .container {
-  width: 50%;
+  width: 40%;
   height: auto;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
+  aspect-ratio: auto;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 5% 5% 5% 15%;
+  padding: 0%;
   display: flex;
 }
 
@@ -360,8 +364,8 @@ figcaption {
 .button.hero:hover {
   background-color: var(--color);
   color: var(--white-100);
+  border-radius: 8rem;
   font-weight: 400;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, .54);
 }
 
 .label {
@@ -547,12 +551,12 @@ figcaption {
 }
 
 .footer {
-  min-height: 25px;
+  min-height: 300px;
   background-color: var(--black);
   color: var(--white-80);
   justify-content: center;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   display: flex;
 }
 
@@ -586,6 +590,7 @@ figcaption {
 .logo {
   z-index: 0;
   height: 2.25rem;
+  min-width: 100px;
   mix-blend-mode: normal;
   position: static;
 }
@@ -1741,16 +1746,22 @@ figcaption {
 }
 
 .spline-scene-5 {
-  z-index: 1;
+  z-index: 2;
   width: 50%;
   height: auto;
-  aspect-ratio: 1 / 1;
+  max-height: none;
+  aspect-ratio: auto;
+  object-fit: cover;
+  justify-content: center;
   align-self: center;
-  margin-top: 6px;
-  padding-top: 5%;
-  padding-right: 10%;
+  align-items: center;
+  margin-top: 0;
+  margin-left: 2%;
+  padding-top: 0%;
+  padding-right: 2%;
+  display: flex;
   position: relative;
-  overflow: scroll;
+  overflow: visible;
 }
 
 .carousel {
@@ -1932,10 +1943,11 @@ figcaption {
 }
 
 .paragraph-3 {
-  width: 100%;
+  width: 80%;
   color: var(--black);
   margin-bottom: 0;
   font-family: Tt Hoves Pro Trial, sans-serif;
+  font-size: 1.25rem;
   font-weight: 400;
 }
 
@@ -2578,6 +2590,7 @@ figcaption {
   color: var(--black);
   background-color: #000;
   border: 2px solid rgba(20, 20, 20, .49);
+  border-radius: 8rem;
   margin-top: 1rem;
   padding: 1.25rem;
   font-family: Tt Hoves Pro Trial, sans-serif;
@@ -2847,7 +2860,7 @@ figcaption {
   color: var(--black);
   margin-bottom: 0;
   font-family: Tt Hoves Pro Trial, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .einleitung {
@@ -2942,6 +2955,29 @@ figcaption {
   color: var(--white-80);
 }
 
+.spline-desktop {
+  z-index: 2;
+  width: 60%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  margin-top: 0;
+  margin-left: 0%;
+  padding-top: 0%;
+  padding-right: 0%;
+  display: flex;
+  position: relative;
+  overflow: visible;
+}
+
+.image-10 {
+  padding-top: 2%;
+}
+
 @media screen and (max-width: 991px) {
   h2 {
     font-size: 3.25rem;
@@ -2950,6 +2986,9 @@ figcaption {
   .section.hero {
     align-items: flex-end;
     padding-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: block;
   }
 
   .section.feature {
@@ -3195,7 +3234,10 @@ figcaption {
   }
 
   .spline-scene-5 {
-    display: none;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    padding: 15% 10% 5% 10px;
+    display: block;
   }
 
   .slider-2 {
@@ -3252,6 +3294,7 @@ figcaption {
   }
 
   .einleitung.narrow {
+    width: 70%;
     padding-left: 10%;
     padding-right: 10%;
   }
@@ -3260,8 +3303,22 @@ figcaption {
     flex-wrap: wrap;
   }
 
+  .image-7 {
+    width: 30%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: none;
+  }
+
   .button-prototyp {
     justify-content: center;
+  }
+
+  .spline-desktop {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    padding: 15% 10% 5% 10px;
+    display: block;
   }
 }
 
@@ -3275,6 +3332,12 @@ figcaption {
     margin-right: 0;
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+
+  .section.hero {
+    flex-direction: column;
+    padding-left: 0%;
+    padding-right: 0%;
   }
 
   .container {
@@ -3390,7 +3453,17 @@ figcaption {
   }
 
   .overview-text-container-copy {
-    min-height: 35rem;
+    width: 100%;
+    min-height: auto;
+    margin: 0%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .body {
+    background-color: #f9f9f9;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .flow {
@@ -3416,7 +3489,15 @@ figcaption {
   }
 
   .spline-scene-5 {
-    display: none;
+    width: 70%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    margin-left: 0%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    padding-right: 0%;
+    display: block;
+    position: static;
   }
 
   .slider-2 {
@@ -3440,6 +3521,12 @@ figcaption {
     padding-bottom: 6rem;
   }
 
+  .title-between.feature.title.grau {
+    height: auto;
+    max-height: 0;
+    min-height: 20vh;
+  }
+
   .image-6 {
     width: 100%;
     display: block;
@@ -3454,10 +3541,24 @@ figcaption {
 
   .design-challenge-text {
     min-height: 35rem;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   .card-sorting {
     height: 35rem;
+  }
+
+  .spline-desktop {
+    width: 70%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    margin-left: 0%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    padding-right: 0%;
+    display: block;
+    position: static;
   }
 }
 
@@ -3481,6 +3582,8 @@ figcaption {
     height: 100%;
     flex-direction: column;
     padding-top: 5rem;
+    padding-left: 0%;
+    padding-right: 0%;
   }
 
   .section.feature.title {
@@ -3499,7 +3602,7 @@ figcaption {
     width: 100%;
     height: 100%;
     flex-flow: column wrap;
-    padding-top: 78%;
+    padding-top: 5%;
     display: flex;
   }
 
@@ -3509,6 +3612,8 @@ figcaption {
   }
 
   .button.hero {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     padding-left: 2rem;
   }
 
@@ -3599,14 +3704,18 @@ figcaption {
 
   .overview-text-container {
     min-height: 400px;
+    mix-blend-mode: normal;
+    border-radius: 20px;
     flex-wrap: wrap;
     align-content: flex-start;
     padding-left: 7%;
     padding-right: 7%;
+    box-shadow: 4px 2px 8px rgba(0, 0, 0, .09);
   }
 
   .overview-image-container {
-    height: 400px;
+    height: auto;
+    margin: 0 5%;
   }
 
   .overview-image {
@@ -3746,6 +3855,13 @@ figcaption {
     background-attachment: scroll;
   }
 
+  .body {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .flow {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -3841,7 +3957,20 @@ figcaption {
     padding-right: 0%;
   }
 
-  .bild-1, .bild-4 {
+  .bild-1 {
+    background-image: none, linear-gradient(#fff, #fff);
+    background-position: 50%, 0 0;
+    background-size: 150%, auto;
+    background-attachment: scroll, scroll;
+  }
+
+  .bild-3 {
+    aspect-ratio: 3 / 2;
+    margin-left: 0%;
+    padding-left: 0%;
+  }
+
+  .bild-4 {
     background-image: none, linear-gradient(#fff, #fff);
     background-position: 50%, 0 0;
     background-size: 150%, auto;
@@ -3907,15 +4036,23 @@ figcaption {
   }
 
   .spline-scene-5 {
-    z-index: -1;
-    aspect-ratio: 2 / 3;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    aspect-ratio: 1 / 1;
     order: -1;
-    display: none;
-    position: relative;
+    align-self: flex-start;
+    margin-left: 0%;
+    padding-top: 10%;
+    padding-right: 0%;
+    display: block;
+    position: static;
     top: auto;
     bottom: 0%;
     left: 0%;
     right: 0%;
+    overflow: visible;
   }
 
   .image-2 {
@@ -3937,6 +4074,7 @@ figcaption {
 
   .slider-2 {
     width: 90%;
+    aspect-ratio: auto;
     flex: 1;
     margin: 16px;
   }
@@ -3951,8 +4089,11 @@ figcaption {
 
   .slider-3 {
     width: 90%;
+    aspect-ratio: auto;
     flex: 1;
-    margin: 16px 16px 16px 2%;
+    order: 0;
+    align-self: center;
+    margin: 16px 16px 16px 5%;
   }
 
   .erkentnisse {
@@ -4043,6 +4184,10 @@ figcaption {
     min-height: 20vh;
   }
 
+  .third.feature.grey {
+    border-radius: 20px;
+  }
+
   .third.testimonial {
     padding-bottom: 40px;
   }
@@ -4075,18 +4220,25 @@ figcaption {
     padding-top: 4rem;
   }
 
+  .slide-6 {
+    border-radius: 20px;
+  }
+
   .heading-11 {
     line-height: 30px;
   }
 
   .screens {
     width: 100%;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
     padding-left: 10%;
     padding-right: 10%;
   }
 
   .screens-class {
     width: 100%;
+    border-radius: 20px;
   }
 
   .screen-1 {
@@ -4106,7 +4258,7 @@ figcaption {
   }
 
   .button-2.hero {
-    padding: 1.25rem;
+    padding: 1rem 1.25rem;
   }
 
   .design-challenge {
@@ -4141,8 +4293,18 @@ figcaption {
     padding-right: 7%;
   }
 
+  .bild-17 {
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0%;
+  }
+
   .card-sorting {
-    height: 400px;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0%;
   }
 
   .einleitung {
@@ -4154,6 +4316,7 @@ figcaption {
   .einleitung.narrow {
     width: 100%;
     flex-wrap: wrap;
+    align-self: flex-start;
     padding-left: 2%;
     padding-right: 2%;
     display: block;
@@ -4165,6 +4328,35 @@ figcaption {
 
   .button-prototyp.hero-copy {
     display: block;
+  }
+
+  .spline-desktop {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    aspect-ratio: 1 / 1;
+    order: -1;
+    align-self: flex-start;
+    margin-left: 0%;
+    padding-top: 10%;
+    padding-right: 0%;
+    display: block;
+    position: static;
+    top: auto;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    overflow: visible;
+  }
+
+  .heading-12 {
+    margin-left: 5%;
+  }
+
+  .image-10 {
+    margin-left: 5%;
+    padding-top: 5%;
   }
 }
 
@@ -4180,7 +4372,7 @@ figcaption {
 @media screen and (max-width: 479px) {
   #w-node-_9d42dc86-0edf-ba37-f5b9-7b6804e435d8-37d50ba3 {
     grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 

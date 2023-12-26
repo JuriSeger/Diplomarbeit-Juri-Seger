@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  Last Published: Sat Dec 23 2023 19:17:18 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  Last Published: Tue Dec 26 2023 13:37:43 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="65859ef1eb6d18df37d50ba3" data-wf-site="657b08f47877cd2b9852ac93" lang="de">
 <head>
   <meta charset="utf-8">
@@ -35,28 +35,30 @@
     </nav>
     <div class="side-nav-wrapper tablet-hide"></div>
     <a href="prototyp.html" class="button-prototyp hero-copy w-button">Zum Prototyp</a>
+    <link rel="prefetch" href="/prototyp">
     <div class="mobile-menu w-nav-button">
       <div data-is-ix2-target="1" class="mobile-menu-icon" data-w-id="0089acc0-6c94-347e-4045-5ed74b88f476" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/657b08f47877cd2b9852ac93/657b08f57877cd2b9852ad24_Mobile%20Menu.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="5" data-duration="0"></div>
     </div>
   </div>
-  <a href="#" class="back-to-top hero-copy-copy w-button">Nach oben</a>
+  <a href="#top" id="nach-oben" class="back-to-top hero-copy-copy w-button">Nach oben</a>
   <section class="section hero">
-    <div class="container"><img src="images/UNIskillsweiuss.svg" loading="lazy" width="256" alt="">
+    <div id="Start" class="spline-desktop" data-w-id="786c9d91-4107-f347-0543-37953078edd0" data-animation-type="spline" data-spline-url="https://prod.spline.design/txX6ovR1LgXj2BDp/scene.splinecode"><canvas></canvas></div>
+    <div class="container"><img src="images/UNIskillsweiuss.svg" loading="lazy" width="256" id="top" alt="" class="image-9">
       <p class="paragraph-3">Die App für einen offenen Wissensaustausch, und eine Konstruktive Lernumgebung.</p>
       <p class="titel-diplo">Diplomarbeit von Juri Seger</p>
       <div class="w-layout-hflex flex-block-2">
-        <a href="#" class="button hero w-button">Prototyp anschauen</a>
-        <a href="#" class="button-2 hero w-button">Zum Prozess</a>
+        <a href="prototyp.html" class="button hero w-button">Prototyp anschauen</a>
+        <link rel="prerender" href="/prototyp">
+        <a href="#Einleitung" class="button-2 hero w-button">Zum Prozess</a>
       </div>
     </div>
-    <div id="Start" class="spline-scene-5" data-w-id="786c9d91-4107-f347-0543-37953078edd0" data-animation-type="spline" data-spline-url="https://prod.spline.design/txX6ovR1LgXj2BDp/scene.splinecode"><canvas></canvas></div>
   </section>
   <section id="FAQ" class="section">
     <div class="einleitung narrow">
-      <h2 data-w-id="c5dc8b7e-e26b-59e7-0946-885e538e66ca" style="opacity:0" class="text-center">Einleitung</h2>
+      <h2 id="Einleitung" data-w-id="c5dc8b7e-e26b-59e7-0946-885e538e66ca" style="opacity:0" class="text-center">Einleitung</h2>
       <p class="paragraph-2">Die Diversifizierung des Wissens welches wir zu uns nehmen ist mir extrem wichtig. Ich bewegte in meinem Leben schon in vielen Kreisen und lernte aus jedem etwas anderes. Ich kenne viele, die bisher noch nicht die Chancen und Möglichkeiten erlebt haben, welche ich bereits hatte. Da entstand eine Idee und später UNIskills. Im Rahmen meiner Diplomarbeit habe ich diese Idee weiterverfolgt ausgetüftelt, gestaltet und getestet. Dafür habe ich den Human Centered Design Prozess genutzt um Phasenweise zuerst ein Fiktives Konzept bis zu einem Fertigen Prototypen zu gestalten. </p>
-      <h4>Naming</h4>
-      <p class="paragraph-2">Der Name UNIskills setzt sich aus zwei Teilen zusammen. UNI - hergeleitet aus Unity, Eng. für Einheit und Skills, was ich kaum erklären muss. Der Name soll erwachsen Wirken, und dem Nutzer ein sicheres Gefühl geben, aufglockert durch die Farben im Branding.</p>
+      <h4 class="heading-12">Naming</h4>
+      <p class="paragraph-2">Der Name UNIskills setzt sich aus zwei Teilen zusammen. UNI - hergeleitet aus Unity, Eng. für Einheit und Skills, was ich kaum erklären muss. Der Name soll erwachsen Wirken, und dem Nutzer ein sicheres Gefühl geben, aufglockert durch die Farben im Branding.</p><img src="images/UNIskills.svg" loading="lazy" width="179" alt="" class="image-10">
     </div><img src="images/DrawKit_Vector_Illustrations_Coffe-call.svg" loading="lazy" alt="" class="image-7">
   </section>
   <section id="Overview" data-w-id="7cad2122-819f-2744-f609-fafef232ecc4" class="title-between feature title grau">
@@ -174,7 +176,7 @@
       <div class="div-block">
         <h5>Design Challenge</h5>
       </div>
-      <h1 class="heading-11">Wie kann ich eine digitale Lernumgebung schaffen, die breite, vollständige Informationen bereitstellt und den offenen, Umgang mit Krititk fördert.</h1>
+      <h6 class="heading-11">Wie kann ich eine digitale Lernumgebung schaffen, die breite, vollständige Informationen bereitstellt und den offenen, Umgang mit Krititk fördert.</h6>
     </div>
   </section>
   <section id="Overview" data-w-id="889a13f0-80df-1f31-695e-b73ab6608941" class="title-between feature title grau">
@@ -205,24 +207,24 @@
   <section data-w-id="c71c7a3a-a3f5-4595-c395-8674fddf72b7" class="second feature reverese">
     <div class="overview-text-container-recht">
       <h5>User Flows</h5>
+      <div data-delay="4000" data-animation="slide" class="slider-3 w-slider" data-autoplay="false" data-easing="ease-in" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="4" data-duration="250" data-infinite="true">
+        <div class="mask w-slider-mask">
+          <div class="slide-17 w-slide"></div>
+          <div class="slide-16 w-slide"></div>
+          <div class="slide-19 w-slide"></div>
+        </div>
+        <div class="left-arrow-3 w-slider-arrow-left">
+          <div class="icon-2 w-icon-slider-left"></div>
+        </div>
+        <div class="right-arrow-3 w-slider-arrow-right">
+          <div class="w-icon-slider-right"></div>
+        </div>
+        <div class="slide-nav-2 w-slider-nav w-round"></div>
+      </div>
       <h3 class="heading-7">Überblick verschaffen</h3>
       <p class="overview-description">Das Erstellen der ersten User Flows war sehr hilfreich. Ich konnte ein Framework der App aufbauen, ohne auf Visuelle Screens Rücksicht zu nehmen. So baut sich schnell das Gerüst der zukünftigen App Latent auf.</p>
       <p class="overview-description">nsgesamt sind sieben User Flows entstanden, drei als Beispiel hier. Ich habe wieder die Personas als Denkstütze genutzt, um einfacher in die Rolle des Users zu schlüpfen.</p>
       <p class="overview-description">Dieser Schritt lieferte die Grundlage für den späteren Paper Prototyp sowie die ersten digitalen Versionen.</p>
-    </div>
-    <div data-delay="4000" data-animation="slide" class="slider-3 w-slider" data-autoplay="false" data-easing="ease-in" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="4" data-duration="250" data-infinite="true">
-      <div class="mask w-slider-mask">
-        <div class="slide-17 w-slide"></div>
-        <div class="slide-16 w-slide"></div>
-        <div class="slide-19 w-slide"></div>
-      </div>
-      <div class="left-arrow-3 w-slider-arrow-left">
-        <div class="icon-2 w-icon-slider-left"></div>
-      </div>
-      <div class="right-arrow-3 w-slider-arrow-right">
-        <div class="w-icon-slider-right"></div>
-      </div>
-      <div class="slide-nav-2 w-slider-nav w-round"></div>
     </div>
   </section>
   <section data-w-id="26e4fe30-a6e4-4f58-9708-a872b8ec7838" class="third feature grey">
