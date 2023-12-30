@@ -41,22 +41,6 @@
   display: flex;
 }
 
-.w-embed-youtubevideo {
-  width: 100%;
-  background-image: url('https://d3e54v103j8qbb.cloudfront.net/static/youtube-placeholder.2b05e7d68d.svg');
-  background-position: 50%;
-  background-size: cover;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  position: relative;
-}
-
-.w-embed-youtubevideo:empty {
-  min-height: 75px;
-  padding-bottom: 56.25%;
-}
-
 @media screen and (max-width: 991px) {
   .w-layout-blockcontainer {
     max-width: 728px;
@@ -309,8 +293,8 @@ figcaption {
 .container {
   width: 40%;
   height: auto;
-  grid-column-gap: 16px;
-  grid-row-gap: 16px;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
   aspect-ratio: auto;
   flex-direction: column;
   justify-content: center;
@@ -392,6 +376,12 @@ figcaption {
   color: var(--white-100);
   border-radius: 8rem;
   font-weight: 400;
+}
+
+.button.hero.w--current {
+  color: var(--white-100);
+  background-color: #fff;
+  font-weight: 500;
 }
 
 .label {
@@ -724,7 +714,7 @@ figcaption {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 10% 2% 10% 15%;
+  padding: 10% 5% 10% 10%;
   display: flex;
 }
 
@@ -732,15 +722,15 @@ figcaption {
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
   background-color: #f5f5f5;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 .overview-image-container {
   width: 50%;
   height: auto;
   border-radius: 20px;
-  margin: 56px 5% 56px 0%;
+  margin: 56px 10% 56px 0%;
   padding: 0;
   position: relative;
   overflow: hidden;
@@ -1081,8 +1071,8 @@ figcaption {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  margin: 5% 5% 5% 0%;
-  padding: 2% 0% 2% 10%;
+  margin: 5% 0%;
+  padding: 2% 10%;
   display: flex;
 }
 
@@ -1264,7 +1254,7 @@ figcaption {
   justify-content: center;
   margin-left: 0%;
   margin-right: 0%;
-  padding: 9.6rem 10%;
+  padding: 10%;
   display: flex;
   overflow: scroll;
 }
@@ -1905,7 +1895,7 @@ figcaption {
   justify-content: center;
   align-items: flex-start;
   margin-left: 0;
-  padding: 10% 15% 10% 0%;
+  padding: 10% 10% 10% 0%;
   display: flex;
 }
 
@@ -1983,12 +1973,12 @@ figcaption {
 .paragraph-3 {
   width: 80%;
   outline-offset: 0px;
-  color: var(--black);
+  color: var(--white-100);
   outline: 3px #fff;
   margin-bottom: 0;
   font-family: Tt Hoves Pro Trial, sans-serif;
   font-size: 1.25rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .erkentnisse {
@@ -2138,6 +2128,7 @@ figcaption {
 }
 
 .first.feature.grau {
+  min-height: auto;
   background-color: #f5f5f5;
   align-items: center;
 }
@@ -2186,6 +2177,7 @@ figcaption {
 }
 
 .second.feature.reverese {
+  min-height: auto;
   flex-direction: row-reverse;
 }
 
@@ -2904,10 +2896,10 @@ figcaption {
 
 .titel-diplo {
   width: 100%;
-  color: var(--black);
+  color: var(--white-100);
   margin-bottom: 0;
   font-family: Tt Hoves Pro Trial, sans-serif;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .einleitung {
@@ -2934,7 +2926,7 @@ figcaption {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 10% 0% 5% 15%;
+  padding: 10% 0% 5% 10%;
   display: flex;
 }
 
@@ -3007,14 +2999,19 @@ figcaption {
   color: var(--white-80);
 }
 
+.button-prototyp.hero-copy.w--current {
+  z-index: 100;
+  position: relative;
+}
+
 .spline-desktop {
-  z-index: 2;
+  z-index: 0;
   width: 60%;
   height: auto;
   max-height: none;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  background-image: radial-gradient(circle, #272727, rgba(255, 255, 255, 0) 67%);
+  background-image: radial-gradient(circle, rgba(39, 39, 39, .79), rgba(255, 255, 255, 0) 67%);
   justify-content: center;
   align-self: center;
   align-items: center;
@@ -3028,6 +3025,7 @@ figcaption {
 }
 
 .image-9 {
+  width: 50%;
   border-radius: 0;
 }
 
@@ -3243,20 +3241,21 @@ figcaption {
 }
 
 .intro.hero {
+  width: auto;
   height: auto;
-  max-height: none;
-  min-height: 60vw;
+  max-height: 100vh;
+  min-height: 90vh;
   grid-column-gap: 2%;
   grid-row-gap: 2%;
   aspect-ratio: auto;
   background-color: #fff;
-  background-image: linear-gradient(288deg, rgba(35, 35, 229, .98), rgba(85, 85, 255, .66) 75%, #ac97ff), url('../images/Frame-596.svg');
+  background-image: linear-gradient(358deg, #edffeb, var(--color) 98%, var(--color)), url('../images/Frame-596.svg');
   background-position: 0 0, 50%;
   background-size: auto, cover;
   justify-content: space-between;
   align-items: center;
   margin-left: 0%;
-  padding: 0 10% 0% 5%;
+  padding: 3.5rem 10% 0% 2%;
   font-family: Tt Hoves Pro Trial, sans-serif;
   display: flex;
   position: static;
@@ -3333,9 +3332,9 @@ figcaption {
 }
 
 .intro-prototyp {
-  height: 95vh;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, var(--color), rgba(47, 255, 32, .09));
   object-fit: cover;
-  background-image: radial-gradient(circle, rgba(0, 0, 0, .63), rgba(255, 255, 255, 0) 59%);
   overflow: scroll;
 }
 
@@ -3346,13 +3345,14 @@ figcaption {
   justify-content: flex-end;
   align-items: center;
   padding: 0%;
-  display: flex;
+  display: none;
   position: static;
   overflow: scroll;
   box-shadow: inset 0 -2px 17px rgba(0, 0, 0, .1), 4px 5px 10px 5px #000;
 }
 
 .flex-block-4 {
+  z-index: 1;
   width: auto;
   height: auto;
   position: absolute;
@@ -3449,7 +3449,7 @@ figcaption {
   justify-content: center;
   align-items: flex-start;
   padding-left: 0;
-  display: none;
+  display: block;
   position: relative;
 }
 
@@ -3492,6 +3492,31 @@ figcaption {
   max-width: 200px;
   position: absolute;
   top: 515.898px;
+}
+
+.lightbox-link {
+  width: 80%;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: static;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.section-3 {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+.html-embed-2 {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
 }
 
 @media screen and (max-width: 991px) {
@@ -3614,7 +3639,6 @@ figcaption {
 
   .mobile-menu-icon {
     height: 3rem;
-    filter: invert();
     display: flex;
   }
 
@@ -3884,9 +3908,9 @@ figcaption {
 
   .spline-desktop {
     width: 100%;
-    aspect-ratio: auto;
-    padding: 50% 10% 5% 10px;
-    display: none;
+    aspect-ratio: 1 / 1;
+    padding: 5% 0% 0%;
+    display: block;
   }
 
   .ausblick.hero {
@@ -3922,11 +3946,9 @@ figcaption {
   }
 
   .intro.hero {
-    background-image: linear-gradient(348deg, rgba(35, 35, 229, .98), rgba(85, 85, 255, .66) 75%, #ac97ff), url('../images/Frame-596.svg');
-    background-position: 0 0, 50%;
-    background-size: auto, cover;
+    background-image: linear-gradient(168deg, var(--color), rgba(41, 246, 13, .42) 99%, var(--color));
     align-items: flex-end;
-    padding: 50% 5% 10%;
+    padding: 0% 5% 10%;
     display: block;
   }
 
@@ -4245,8 +4267,10 @@ figcaption {
   }
 
   .intro.hero {
+    min-height: 25vh;
+    background-image: linear-gradient(184deg, var(--color), rgba(47, 233, 32, .21) 84%, rgba(80, 247, 62, 0));
     flex-direction: column;
-    padding-top: 10%;
+    padding-top: 14%;
     padding-left: 0%;
     padding-right: 0%;
   }
@@ -4337,6 +4361,10 @@ figcaption {
     padding: 1rem;
   }
 
+  .button.hero.w--current {
+    text-align: center;
+  }
+
   .rich-text {
     width: 100%;
     max-width: none;
@@ -4405,6 +4433,10 @@ figcaption {
     justify-content: flex-end;
     padding: 6px;
     display: flex;
+  }
+
+  .mobile-menu-icon {
+    filter: invert();
   }
 
   .grid {
@@ -4544,7 +4576,7 @@ figcaption {
     justify-content: flex-start;
     margin-left: 5%;
     margin-right: 5%;
-    padding: 0%;
+    padding: 5% 0%;
   }
 
   .spline-scene {
@@ -4619,9 +4651,9 @@ figcaption {
 
   .flow.prototype {
     min-height: auto;
-    margin-top: 50%;
-    margin-bottom: 50%;
-    padding: 4%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 0% 5%;
   }
 
   .flow.prototype.title {
@@ -4634,7 +4666,7 @@ figcaption {
     align-content: flex-start;
     justify-content: flex-start;
     align-self: flex-start;
-    padding: 2%;
+    padding: 5% 2%;
   }
 
   .overview-image-container-prototype {
@@ -4665,7 +4697,12 @@ figcaption {
   }
 
   .prozess-button.hero-copy {
+    color: var(--black);
     display: block;
+  }
+
+  .prozess-button.hero-copy:hover {
+    color: var(--black);
   }
 
   .back-to-top.hero-copy {
@@ -4720,6 +4757,7 @@ figcaption {
   .video-1 {
     width: 100%;
     height: auto;
+    border-radius: 20px;
     flex: 0 auto;
     align-self: center;
   }
@@ -4749,7 +4787,7 @@ figcaption {
 
   .flow-first.prototype {
     min-height: auto;
-    padding: 30% 4% 4%;
+    padding: 5% 4% 4%;
   }
 
   .flow-first.prototype.title {
@@ -4763,7 +4801,16 @@ figcaption {
     overflow: visible;
   }
 
-  .youtube-2, .youtube-3, .youtube-4, .youtube-5, .youtube-6 {
+  .youtube-2 {
+    aspect-ratio: 2 / 3;
+  }
+
+  .youtube-3 {
+    aspect-ratio: 2 / 3;
+    border-radius: 20px;
+  }
+
+  .youtube-4, .youtube-5, .youtube-6 {
     aspect-ratio: 2 / 3;
   }
 
@@ -5041,6 +5088,7 @@ figcaption {
   }
 
   .button-2.hero {
+    text-align: center;
     margin-top: 0;
     padding: 1rem;
   }
@@ -5214,9 +5262,7 @@ figcaption {
 
   .intro.hero {
     height: 100%;
-    background-image: linear-gradient(358deg, rgba(35, 35, 229, .98), rgba(85, 85, 255, .66) 52%, #ac97ff), url('../images/Frame-596.svg');
-    background-position: 0 0, 50%;
-    background-size: auto, cover;
+    background-image: linear-gradient(178deg, var(--color), rgba(71, 226, 65, .49) 85%, rgba(172, 151, 255, 0));
     flex-direction: column;
     margin-top: 2.5%;
     margin-right: 0%;
@@ -5256,14 +5302,14 @@ figcaption {
   }
 
   .spline-scene-6 {
-    width: 100%;
+    width: 120%;
     aspect-ratio: auto;
     box-shadow: none;
     object-fit: cover;
     flex-direction: row;
     justify-content: center;
     padding: 0%;
-    display: none;
+    display: block;
     position: static;
     left: -5%;
   }
