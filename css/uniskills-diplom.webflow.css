@@ -557,12 +557,14 @@ figcaption {
 }
 
 .footer {
+  z-index: 10;
   min-height: 300px;
   background-color: var(--white-100);
   color: var(--white-80);
   justify-content: flex-start;
   padding: 5rem 10%;
   display: flex;
+  position: relative;
 }
 
 .footer-title {
@@ -4190,10 +4192,17 @@ figcaption {
     padding: 20% 5%;
   }
 
+  .bild-17 {
+    aspect-ratio: 3 / 2;
+    margin: 0%;
+    padding: 0%;
+  }
+
   .card-sorting {
     width: 100%;
     height: auto;
     order: -1;
+    margin: 5%;
   }
 
   .einleitung {
@@ -4615,8 +4624,16 @@ figcaption {
     padding-right: 5%;
   }
 
+  .bild-17 {
+    aspect-ratio: 1 / 1;
+    margin: 0%;
+    padding: 0%;
+  }
+
   .card-sorting {
-    height: 35rem;
+    width: 100%;
+    height: 100%;
+    margin: 5% 0% 5% 5%;
   }
 
   .einleitung.narrow {
@@ -4827,7 +4844,7 @@ figcaption {
   .navbar {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    background-color: rgba(0, 0, 0, .46);
+    background-color: rgba(0, 0, 0, .62);
     background-image: none;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -4934,6 +4951,7 @@ figcaption {
 
   .overview-image-container {
     height: auto;
+    aspect-ratio: 1 / 1;
     margin: 0%;
   }
 
@@ -5662,6 +5680,8 @@ figcaption {
 
   .button-prototyp.hero-copy.w--current {
     z-index: 0;
+    color: var(--black);
+    background-color: #000;
   }
 
   .spline-desktop {
