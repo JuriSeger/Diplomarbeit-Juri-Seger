@@ -1056,9 +1056,10 @@ figcaption {
   grid-row-gap: 1rem;
   flex-direction: row;
   justify-content: flex-start;
+  align-self: auto;
   align-items: center;
-  margin: 5% 0%;
-  padding: 2% 10%;
+  margin: 0%;
+  padding: 5% 10%;
   display: flex;
 }
 
@@ -1667,7 +1668,11 @@ figcaption {
 
 .video-1 {
   width: 80%;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
   border-radius: 20px;
+  flex-direction: column;
+  display: flex;
 }
 
 .flow-first {
@@ -1731,7 +1736,7 @@ figcaption {
   justify-content: center;
   margin-left: 0%;
   margin-right: 0%;
-  padding: 15rem 10% 9.6rem;
+  padding: 5rem 10% 9.6rem;
   display: flex;
   overflow: scroll;
 }
@@ -1889,6 +1894,7 @@ figcaption {
 
 .heading-10 {
   color: var(--white-100);
+  margin: 0;
   font-family: Tt Hoves Pro Trial, sans-serif;
   font-weight: 400;
 }
@@ -2348,8 +2354,10 @@ figcaption {
 
 .title-between.feature.title.grau {
   z-index: 1;
-  max-height: 15vw;
+  max-height: none;
+  min-height: auto;
   align-items: flex-start;
+  display: block;
   position: static;
 }
 
@@ -3231,7 +3239,8 @@ figcaption {
 }
 
 .menu-bar:hover {
-  background-color: rgba(194, 194, 194, .83);
+  color: rgba(255, 255, 255, .55);
+  background-color: rgba(255, 249, 249, .83);
 }
 
 .intro {
@@ -3335,9 +3344,12 @@ figcaption {
 }
 
 .intro-prototyp {
-  height: 100vh;
-  background-image: linear-gradient(to bottom, var(--color), rgba(47, 255, 32, .09));
+  width: auto;
+  height: auto;
+  aspect-ratio: auto;
+  background-image: linear-gradient(to bottom, var(--black), var(--black));
   object-fit: cover;
+  padding: 8rem 5% 5%;
   overflow: scroll;
 }
 
@@ -3358,8 +3370,8 @@ figcaption {
   z-index: 1;
   width: auto;
   height: auto;
-  position: absolute;
-  top: 77%;
+  position: relative;
+  top: 53%;
   bottom: 59%;
   left: 5%;
   right: 6%;
@@ -3651,6 +3663,172 @@ figcaption {
   background-position: 0 0;
   background-size: cover;
   padding-bottom: 0;
+}
+
+.slide-30 {
+  height: 100%;
+  aspect-ratio: 16 / 9;
+  background-image: url('../images/Slide-16_9---25useberry.jpg');
+  background-position: 50%;
+  background-size: cover;
+  border-radius: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+  position: relative;
+}
+
+.slide-31 {
+  background-color: rgba(20, 8, 255, 0);
+  background-image: url('../images/Slide-16_9---26useberry.jpg');
+  background-position: 50%;
+  background-size: cover;
+}
+
+.video-3 {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+.html-embed-3 {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: static;
+}
+
+.div-block-5 {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: absolute;
+}
+
+.flow-last {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--black);
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.flow-last.hero {
+  height: 100vh;
+  min-height: 105vh;
+  background-color: rgba(0, 0, 0, 0);
+  align-items: center;
+  margin-left: 0;
+  padding-bottom: 6%;
+  display: flex;
+  position: relative;
+  overflow: visible;
+}
+
+.flow-last.feature {
+  justify-content: space-between;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+}
+
+.flow-last.feature.reverese {
+  flex-direction: row-reverse;
+}
+
+.flow-last.feature.title {
+  z-index: 0;
+  width: 100%;
+  min-height: 50vh;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  position: relative;
+}
+
+.flow-last.testimonial {
+  display: none;
+  position: relative;
+}
+
+.flow-last.download {
+  min-height: auto;
+  background-image: none;
+  background-position: 0 0;
+  background-size: cover;
+  padding-bottom: 0;
+}
+
+.flow-last.prototype {
+  min-height: auto;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding: 10%;
+  display: flex;
+  overflow: scroll;
+}
+
+.flow-last.prototype.reverese {
+  flex-direction: row-reverse;
+}
+
+.flow-last.prototype.title {
+  z-index: 0;
+  width: 100%;
+  min-height: 50vh;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  position: relative;
+}
+
+.video-4 {
+  width: 100vw;
+  height: 100vh;
+}
+
+.video-9x16 {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
+.video-16x9 {
+  width: auto;
+  height: auto;
+  max-height: none;
+  margin: 0%;
+}
+
+.video-1x1 {
+  width: 100vw;
+  height: 100vh;
+  aspect-ratio: 1 / 1;
+  display: block;
+}
+
+.intro-9x16 {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, var(--black), var(--black));
+  object-fit: cover;
+  display: none;
+  overflow: scroll;
+}
+
+.intro-1x1 {
+  width: 100vw;
+  height: 100vh;
+  aspect-ratio: 1 / 1;
+  background-image: linear-gradient(to bottom, var(--black), var(--black));
+  object-fit: cover;
+  display: none;
+  overflow: scroll;
 }
 
 @media screen and (max-width: 991px) {
@@ -4101,6 +4279,12 @@ figcaption {
     margin-right: 0;
   }
 
+  .intro-prototyp {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+  }
+
   .title-prototyp.feature {
     flex-wrap: wrap;
   }
@@ -4123,6 +4307,34 @@ figcaption {
     justify-content: flex-start;
     padding-left: 5%;
     padding-right: 5%;
+  }
+
+  .flow-last.feature, .flow-last.prototype {
+    flex-wrap: wrap;
+  }
+
+  .video-4, .video-9x16, .video-16x9 {
+    aspect-ratio: 1 / 1;
+  }
+
+  .video-1x1 {
+    width: auto;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .intro-9x16 {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .intro-1x1 {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 8rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: block;
   }
 }
 
@@ -4278,6 +4490,7 @@ figcaption {
     margin: 0%;
     padding-top: 5%;
     padding-bottom: 5%;
+    padding-left: 5%;
   }
 
   .body {
@@ -4324,6 +4537,10 @@ figcaption {
     padding-bottom: 6rem;
   }
 
+  .flow-first.prototype {
+    padding: 5%;
+  }
+
   .spline-scene-5 {
     width: 70%;
     height: auto;
@@ -4338,21 +4555,32 @@ figcaption {
 
   .slider-2 {
     width: 100%;
-    margin: 16px;
+    margin: 5%;
   }
 
   .overview-text-container-recht {
     min-height: 35rem;
-    margin-left: 5%;
+    margin-left: 0%;
     padding-left: 5%;
   }
 
   .slider-3 {
     width: 100%;
-    margin: 16px;
+    margin: 5%;
   }
 
-  .erkentnisse, .first, .second, .third, .title-between {
+  .erkentnisse, .first, .second, .third {
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .third.feature.grey {
+    padding-left: 0%;
+  }
+
+  .title-between {
     margin-left: 0;
     margin-right: 0;
     padding-top: 6rem;
@@ -4447,6 +4675,15 @@ figcaption {
     display: none;
   }
 
+  .intro-prototyp {
+    width: auto;
+    height: auto;
+    aspect-ratio: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: block;
+  }
+
   .title-prototyp {
     margin-left: 0;
     margin-right: 0;
@@ -4466,11 +4703,41 @@ figcaption {
     padding-right: 5%;
   }
 
-  .third-copy {
+  .third-copy, .flow-last {
     margin-left: 0;
     margin-right: 0;
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+
+  .flow-last.prototype {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .video-4, .video-9x16 {
+    height: auto;
+    aspect-ratio: 3 / 2;
+  }
+
+  .video-16x9 {
+    width: auto;
+    height: auto;
+    aspect-ratio: auto;
+    margin-top: 10%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  .video-1x1, .intro-9x16 {
+    height: auto;
+    aspect-ratio: 3 / 2;
+  }
+
+  .intro-1x1 {
+    height: auto;
+    aspect-ratio: 3 / 2;
+    display: none;
   }
 }
 
@@ -4739,7 +5006,7 @@ figcaption {
     display: none;
   }
 
-  .side-nav-wrapper.tablet-hide {
+  .side-nav-wrapper:hover, .side-nav-wrapper.tablet-hide {
     background-color: #fff;
   }
 
@@ -4814,10 +5081,15 @@ figcaption {
   }
 
   .body {
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    background-color: #fff;
+    flex-direction: column;
     margin-left: 0;
     margin-right: 0;
     padding-left: 0;
     padding-right: 0;
+    display: flex;
   }
 
   .flow {
@@ -5058,7 +5330,7 @@ figcaption {
     height: auto;
     aspect-ratio: auto;
     flex: 0 auto;
-    margin: 0;
+    margin: 5% 0;
   }
 
   .mask {
@@ -5242,6 +5514,7 @@ figcaption {
   .title-between.feature.title.grau {
     max-height: none;
     min-height: auto;
+    background-color: rgba(245, 245, 245, 0);
     padding-top: 10%;
   }
 
@@ -5261,7 +5534,12 @@ figcaption {
     border-radius: 20px;
   }
 
+  .slide-8 {
+    aspect-ratio: auto;
+  }
+
   .heading-11 {
+    text-align: left;
     line-height: 40px;
   }
 
@@ -5364,8 +5642,8 @@ figcaption {
 
   .einleitung.narrow {
     width: auto;
-    grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
     flex-wrap: wrap;
     align-self: flex-start;
     padding: 5% 0%;
@@ -5380,6 +5658,10 @@ figcaption {
     color: var(--white-100);
     background-color: #fff;
     display: block;
+  }
+
+  .button-prototyp.hero-copy.w--current {
+    z-index: 0;
   }
 
   .spline-desktop {
@@ -5470,6 +5752,10 @@ figcaption {
     font-weight: 500;
   }
 
+  .menu-bar:hover {
+    background-color: #fff;
+  }
+
   .intro {
     width: auto;
     min-height: auto;
@@ -5512,10 +5798,14 @@ figcaption {
   }
 
   .intro-prototyp {
-    min-height: 100vh;
+    width: auto;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 2 / 3;
     justify-content: center;
     align-items: center;
-    display: flex;
+    margin-top: 113px;
+    display: none;
   }
 
   .spline-scene-6 {
@@ -5575,7 +5865,13 @@ figcaption {
     padding-top: 25rem;
   }
 
-  .title-prototyp.feature.title, .title-prototyp.feature.title.grau {
+  .title-prototyp.feature.title {
+    max-height: none;
+    min-height: auto;
+    padding-top: 6.1rem;
+  }
+
+  .title-prototyp.feature.title.grau {
     max-height: none;
     min-height: auto;
   }
@@ -5589,7 +5885,8 @@ figcaption {
   }
 
   .html-embed-2 {
-    aspect-ratio: auto;
+    width: 100vw;
+    aspect-ratio: 2 / 3;
     object-fit: cover;
     overflow: hidden;
   }
@@ -5649,6 +5946,91 @@ figcaption {
 
   .third-copy.download {
     padding-top: 4rem;
+  }
+
+  .video-3 {
+    width: 100vw;
+    height: 100vh;
+    aspect-ratio: auto;
+    object-fit: contain;
+    overflow: hidden;
+  }
+
+  .flow-last {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .flow-last.hero {
+    height: 100svh;
+    flex-direction: column;
+    padding-top: 0;
+  }
+
+  .flow-last.feature.title {
+    min-height: 20vh;
+  }
+
+  .flow-last.testimonial {
+    padding-bottom: 40px;
+  }
+
+  .flow-last.download {
+    padding-top: 4rem;
+  }
+
+  .flow-last.prototype {
+    min-height: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 20% 5% 50%;
+  }
+
+  .flow-last.prototype.title {
+    min-height: 20vh;
+  }
+
+  .video-4 {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+  }
+
+  .video-9x16 {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+  }
+
+  .video-16x9, .video-1x1 {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+  }
+
+  .intro-9x16 {
+    width: auto;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: block;
+  }
+
+  .intro-1x1 {
+    width: auto;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 2 / 3;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    padding-top: 14%;
+    display: none;
   }
 }
 
