@@ -2884,6 +2884,7 @@ figcaption {
     grid-row-gap: 0px;
     background-color: var(--blue);
     background-image: none;
+    border-radius: 0;
     flex-flow: row;
     justify-content: space-between;
     align-items: center;
