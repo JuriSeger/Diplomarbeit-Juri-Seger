@@ -417,7 +417,7 @@ figcaption {
   backdrop-filter: blur(2px);
   color: rgba(255, 255, 255, .24);
   background-color: rgba(0, 0, 0, 0);
-  border-radius: 20px;
+  border-radius: 0;
   justify-content: flex-start;
   align-items: center;
   padding-left: 5%;
@@ -2035,9 +2035,12 @@ figcaption {
 
   .navbar {
     height: 7rem;
+    background-color: var(--blue);
     -webkit-backdrop-filter: none;
     backdrop-filter: none;
+    color: var(--black);
     background-image: none;
+    border-radius: 0;
     justify-content: space-between;
     padding-left: 5%;
     padding-right: 5%;
@@ -2065,6 +2068,7 @@ figcaption {
 
   .logo {
     height: 2.25rem;
+    filter: invert();
   }
 
   .nav-menu {
@@ -2092,9 +2096,10 @@ figcaption {
 
   .mobile-menu-icon {
     height: 3rem;
+    filter: invert();
     color: #000;
     background-color: rgba(255, 255, 255, 0);
-    border-radius: 20px;
+    border-radius: 0;
     display: flex;
   }
 
@@ -2909,7 +2914,8 @@ figcaption {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 48px;
+    margin-top: 8rem;
+    padding-top: 76px;
     padding-bottom: 48px;
     display: block;
   }
@@ -2987,8 +2993,8 @@ figcaption {
   }
 
   .side-nav-wrapper {
+    background-color: var(--blue);
     color: var(--white-100);
-    background-color: rgba(37, 37, 228, .5);
     display: none;
   }
 
@@ -2997,8 +3003,9 @@ figcaption {
   }
 
   .side-nav-wrapper.tablet-hide {
-    background-color: var(--black);
+    background-color: var(--blue);
     color: var(--blue);
+    display: none;
   }
 
   .overview-description {
