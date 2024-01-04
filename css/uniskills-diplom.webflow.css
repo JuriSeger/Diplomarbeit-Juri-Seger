@@ -673,7 +673,7 @@ figcaption {
   grid-row-gap: 1rem;
   flex-direction: column;
   justify-content: center;
-  align-self: flex-start;
+  align-self: center;
   align-items: flex-start;
   padding: 0% 5%;
   display: flex;
